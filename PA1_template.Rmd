@@ -1,9 +1,4 @@
----
-title: "Reproducible Research - Assignment 1"
-author: "Ivan Arambula"
-date: "1/17/2019"
-output: html_document
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
