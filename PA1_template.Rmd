@@ -4,7 +4,6 @@ output:
     keep_md: yes
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -126,7 +125,7 @@ head(weekDaysData)
 
 1. Make a panel plot containing a time series plot (i.e. `type = "l"`) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was created using **simulated data**:
 
-```{r weekDaysData plot}
+```{r weekDaysData}
 weekDaySteps <- aggregate(weekDaysData$steps,
                           by=list(weekDaysData$type,weekDaysData$interval),
                           mean,
@@ -139,3 +138,4 @@ ggplot(weekDaySteps,aes(x=interval,y=steps))+
              x="Intervals every 5 min",y="Average Steps")+
   scale_fill_manual(values=c("#999999", "#E69F00"))
 ```
+

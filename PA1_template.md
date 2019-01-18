@@ -7,7 +7,6 @@ output:
 
 
 
-
 ### Reproducible Research: Peer Assessment 1
 
 ## Loading and preprocessing the data
@@ -229,4 +228,5 @@ ggplot(weekDaySteps,aes(x=interval,y=steps))+
   scale_fill_manual(values=c("#999999", "#E69F00"))
 ```
 
-![](PA1_template_files/figure-html/weekDaysData plot-1.png)<!-- -->
+![](PA1_template_files/figure-html/weekDaysData-1.png)<!-- -->
+
